@@ -1,0 +1,151 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background_blue10);
+    padding: 5%;
+    gap: 16px;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer__info__links{
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    gap: 16px;
+}
+
+.footer__info__links a{
+    color: var(--colour_grey100);
+    font-weight: 500;
+}
+
+.footer__form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    gap: 16px;
+}
+
+.footer__form h2{
+    font-weight: 700;
+}
+
+.footer__form form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__form button{
+    color: var(--colour_white);
+    background-color: var(--colour_blue100);
+    width: 45%;
+    padding: 3% 0;
+}
+
+.mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 10px;
+    background-color: var(--colour_white);
+}
+
+.mark h4{
+    font-weight: 500;
+}   
+
+.gitHub__logo{
+    padding-top: 2px;
+    width: 16px;
+    height: 16px;
+}
+
+.gitHub__logo path{
+    fill: var(--colour_grey100);
+}
+
+.gitHub__logo:hover path{
+    fill: var(--colour_blue100);
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3% 5%;
+    }
+
+    .footer__info{
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .footer__info__links{
+        align-items: inherit;
+        gap: 24px;
+    }  
+    
+    .footer__form{
+        width: 60%;
+        margin-top: 0;
+        gap: 16px;
+        align-self: flex-start;
+    }
+
+    .footer__form button{
+        width: 35%;
+    }
+    
+    .mark{
+        padding: 3% 5%;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .footer{
+        padding: 5% 10%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer__info{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+    }
+    
+    .footer__form{
+        width: 50%;
+        margin-top: 0;
+        gap: 10px;
+        align-self: flex-start;
+    }
+
+    .footer__form button{
+        width: 30%;
+        padding: 2% 0;
+    }
+    
+    .mark{
+        padding: 2% 10%;
+        gap: 20px;
+    }
+
+    .mark h4{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

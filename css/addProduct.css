@@ -1,0 +1,44 @@
+main{
+    background-color: var(--background_grey05);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 8% 5%;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main button{
+    background-color: var(--colour_blue100);
+    color: var(--colour_white);
+    font-weight: 400;
+    padding: 3% 10%;
+}
+
+
+@media screen and (min-width: 768px) {
+    main{
+        gap: 30px;
+        padding: 5% 4%;
+    }
+
+    main button{
+        padding: 2% 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main{
+        gap: 30px;
+        padding: 5% 28%;
+    }
+
+    main h1{
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
