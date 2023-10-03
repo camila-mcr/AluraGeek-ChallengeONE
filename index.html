@@ -20,15 +20,17 @@
         <div class="header__box">
             <img class="header__logo" src="images/logo_AluraGeek.png" alt="Logo AluraGeek">
             <div class="header__search">
-                <h3>¿Qué deseas buscar?</h3>
-                <svg class="header__search__img" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Icone">
-                        <path id="Vector" d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z" fill="#A2A2A2"/>
-                    </g>
-                </svg>
+                <input id="search_bar" type="text" placeholder="¿Qué deseas buscar?">
+                <button id="search_button">
+                    <svg class="header__search__img" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Icone">
+                            <path id="Vector" d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z" fill="#A2A2A2"/>
+                        </g>
+                    </svg>
+                </button>
             </div>
         </div>
-        <button class="header__button__login">Login</button>
+        <button class="header__button__login" id="login_button_index">Login</button>
         <svg class="header__search__img--movil" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Icone">
                 <path id="Vector" d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z" fill="#A2A2A2"/>
@@ -40,7 +42,7 @@
         <section class="banner">
             <h1>Febrero Promocional</h2>
             <h3>Productos seleccionados con 33% de descuento</h4>
-            <button class="banner__button">Ver consolas</button>
+            <button class="banner__button" id="banner_button">Ver consolas</button>
         </section>
 
         <section class="products">
@@ -63,7 +65,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="products__box">
+                <div class="products__box" id="products_box">
                     <div class="products__card">
                         <div class="products__card__img">
                             <img src="images/helmet_white.jpg" alt="Producto">
@@ -133,7 +135,7 @@
             </section>
 
             <!-- CONSOLAS -->
-            <section class="products__category">
+            <section class="products__category" id="category_console">
                 <div class="products__header">
                     <h1 class="products__title">Consolas</h1>
                     <div class="products__link">
@@ -323,14 +325,20 @@
             </div>
             <div class="footer__form">
                 <h2>Hable con nosotros</h2>
-                <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <textarea name="" id="" placeholder="Escribe tu mensaje" cols="10" rows="10"></textarea>
-                    <button>Enviar mensaje</button>
+                <form action="" id="contact_form">
+                    <div class="form__container">
+                        <input type="text" placeholder="Nombre" id="contact_name" pattern="[\s\S]{10,40}" required>
+                        <span id="input__errorMessage"></span>
+                    </div>
+                    <div class="form__container">
+                        <textarea name="" id="contact_message" placeholder="Escribe tu mensaje" cols="10" rows="10" minlength="15" maxlength="120" required></textarea>
+                        <span id="input__errorMessage"></span>
+                    </div>
+                    <button id="button_contact" type="submit">Enviar mensaje</button>
                 </form>
             </div>
         </section>
-        <section class="mark">
+        <section class="developedBy">
             <h4>Desarrollado por Camila | 2023</h4>
             <a href="#">
                 <svg class="gitHub__logo" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -339,6 +347,9 @@
             </a>
         </section>
     </footer>
-    <script src="script.js"></script>
+    <script src="buttons.js"></script>
+    <script src="validation.js"></script>
+    <script src="controllers/products_controller.js" type="module"></script>
+    <script src="controllers/searchProduct_controller.js" type="module"></script>
 </body>
 </html>

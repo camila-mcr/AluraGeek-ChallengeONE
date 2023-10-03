@@ -51,7 +51,8 @@
     padding: 3% 0;
 }
 
-.mark{
+
+.developedBy{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,7 @@
     background-color: var(--colour_white);
 }
 
-.mark h4{
+.developedBy h4{
     font-weight: 500;
 }   
 
@@ -107,7 +108,7 @@
         width: 35%;
     }
     
-    .mark{
+    .developedBy{
         padding: 3% 5%;
         gap: 20px;
     }
@@ -139,12 +140,12 @@
         padding: 2% 0;
     }
     
-    .mark{
+    .developedBy{
         padding: 2% 10%;
         gap: 20px;
     }
 
-    .mark h4{
+    .developedBy h4{
         font-size: 14px;
         line-height: 16px;
     }

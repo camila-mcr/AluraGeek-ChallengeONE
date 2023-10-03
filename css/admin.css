@@ -73,6 +73,12 @@ main{
     z-index: 1;
 }
 
+.category__card__edit .bin{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
 .category__card__edit svg{
     width: 20px;
     height: 20px;

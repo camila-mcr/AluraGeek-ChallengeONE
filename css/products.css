@@ -78,6 +78,9 @@
     color: var(--colour_blue100);
 }
 
+.hide{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .products{

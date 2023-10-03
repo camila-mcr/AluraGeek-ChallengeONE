@@ -67,10 +67,21 @@ header button{
         background-color: var(--background_grey05);
     }
     
-    .header__search h3{
-        display: inline;
+    .header__search input{
+        background-color: var(--background_grey05);
+        width: 90%;
+        border: none;
+        font-size: 14px;
+        line-height: 16px;
         font-weight: 400;
+        padding: 2%;
         color: var(--colour__grey50);
+    }
+
+    .header__search button{
+        border: none;
+        background-color: transparent;
+        padding: 0;
     }
     
     .header__search__img{

@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto 2",
+      "price": 60,
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto ABD",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos",
+      "id": 3
+    },
+    {
+      "id": "69bce020-6ab2-4831-86ad-6085a8f18250",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto YUI",
+      "price": "40",
+      "description": "#1111111111",
+      "category": "Diversos"
+    }
+  ],
+  "admin": [
+    {
+      "email": "ejemplo@gmail.com",
+      "password": "Contraseña.123"
+    }
+  ]
+}
