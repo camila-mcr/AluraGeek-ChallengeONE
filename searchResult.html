@@ -18,9 +18,11 @@
 <body>
     <header>
         <div class="header__box">
-            <img class="header__logo" src="images/logo_AluraGeek.png" alt="Logo AluraGeek">
+            <a href="index.html">
+                <img class="header__logo" src="images/logo_AluraGeek.png" alt="Logo AluraGeek">
+            </a>
             <div class="header__search">
-                <input id="search_bar" type="text" placeholder="¿Qué deseas buscar?">
+                <input id="search_bar" type="search" placeholder="¿Qué deseas buscar?">
                 <button id="search_button">
                     <svg class="header__search__img" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Icone">
@@ -39,7 +41,7 @@
     </header>
 
     <main>
-        <section class="products">
+        <section class="products" id="products">
             <div class="products__header">
                 <h1 class="products__title">Resultados de la búsqueda.</h1>
             </div>
@@ -54,7 +56,11 @@
                         <h2 class="products__card__price">R$ 60,00</h2>
                     </div>
                 </div>                 
-            </section>
+            </section>         
+
+
+
+        </section>    
          
     </main>
     <footer>
@@ -94,8 +100,7 @@
             </a>
         </section>
     </footer>
-    <script src="buttons.js"></script>
     <script src="validation.js"></script>
-    <script src="controllers/searchProduct_controller.js" type="module"></script>
+    <script src="controllers/searchResult_controller.js" type="module"></script>
 </body>
 </html>

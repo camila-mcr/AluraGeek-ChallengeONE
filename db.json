@@ -1,27 +1,219 @@
 {
   "products": [
     {
-      "id": 2,
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto 2",
+      "id": "1",
+      "image": "https://hasbropulse.com/cdn/shop/products/F5548_PROD_SW_BL_ARK_089_Online_2000SQ_2000x.jpg?v=1653325534",
+      "name": "Producto XYZ",
       "price": 60,
+      "description": "#1111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "2",
+      "image": "https://www.lego.com/cdn/cs/set/assets/blt3d70a46fc7434bbe/75304-PDP-202105-Block-Standard-1.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1",
+      "name": "Producto XYZ",
+      "price": 60,
+      "description": "#1111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "3",
+      "image": "https://m.media-amazon.com/images/I/91Au8mepKtL.jpg",
+      "name": "Producto XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "4",
+      "image": "https://images.unsplash.com/photo-1599719500956-d158a26ab3ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3Rvcm10cm9vcGVyfGVufDB8fDB8fHww&w=1000&q=80",
+      "name": "Producto XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "5",
+      "image": "https://www.stagenine.com/cdn/shop/products/6443725cv19d.jpg?v=1677879839&width=1946",
+      "name": "Producto ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "6",
+      "image": "https://m.media-amazon.com/images/I/71QR0wqjLSL._AC_UF894,1000_QL80_.jpg",
+      "name": "Producto ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "7",
+      "image": "https://m.media-amazon.com/images/I/61h1v+LwkDL.jpg",
+      "name": "Control XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "8",
+      "image": "https://cdn.images.express.co.uk/img/dynamic/143/940x/xbox-series-x-review-1724989.jpg?r=1692697551266",
+      "name": "Control y consola XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "9",
+      "image": "https://techcrunch.com/wp-content/uploads/2016/11/pb070226.jpg?resize=1200,781",
+      "name": "Consola XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "10",
+      "image": "https://cdn2.storyasset.link/5x65DmRLFTa8SJKOjTtlvzJIHQr1/ms-xkklgznyve.jpg",
+      "name": "Control y consola XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "11",
+      "image": "https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/nintendo_switch_oled/CI_NSwitch_family_hardware_had.png",
+      "name": "Control y consola XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "12",
+      "image": "https://www.retrosales.com.au/cdn/shop/collections/1280x720.webp?v=1678236485",
+      "name": "Game Boy",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "13",
+      "image": "https://images.unsplash.com/photo-1589021818993-a1223f8f0f04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1045&q=80",
+      "name": "Camisa Atari",
+      "price": "60",
       "description": "#1111111",
       "category": "Diversos"
     },
     {
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto ABD",
+      "id": "14",
+      "image": "https://www.mikepinder.co.uk/wp-content/uploads/2015/10/super-nintendo-snes-gaming-controller-t-shirt-buttons-3.jpg",
+      "name": "Camisa SNES",
       "price": "60",
       "description": "#1111111",
-      "category": "Diversos",
-      "id": 3
+      "category": "Diversos"
+    },
+    {
+      "id": "15",
+      "image": "https://avidcollectibles.com/wp-content/uploads/2022/07/Best-Sonic-Funko-Pop-Guide.webp",
+      "name": "Producto XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "id": "16",
+      "image": "https://miro.medium.com/v2/resize:fit:720/0*MFaivzZXf11A-ekk",
+      "name": "Producto XYZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "id": "17",
+      "image": "https://static.wixstatic.com/media/6b981e_d22899d8fd934168bbfecdff25db04ab~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,enc_auto/6b981e_d22899d8fd934168bbfecdff25db04ab~mv2.jpg",
+      "name": "Producto DBZ",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "id": "18",
+      "image": "https://media.karousell.com/media/photos/products/2023/3/13/showhand_studio_pikachu__pokem_1678717088_71e518cc.jpg",
+      "name": "Producto PKMN",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "id": "98776",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto TEMPORAL",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "id": "22678",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto TEMPORAL",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
     },
     {
       "id": "69bce020-6ab2-4831-86ad-6085a8f18250",
       "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto YUI",
+      "name": "Producto TEMPORAL",
       "price": "40",
       "description": "#1111111111",
+      "category": "Diversos"
+    },
+    {
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto NUEVO EDIT",
+      "price": "40",
+      "description": "#11111111",
+      "category": "Consolas",
+      "id": "fc01c0a4-f171-4a0b-bbb2-9da74757cd86"
+    },
+    {
+      "id": "0cbc586c-9268-4961-a761-068ea46ed2fb",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto SEL",
+      "price": "60",
+      "description": "#111111",
+      "category": "Star Wars"
+    },
+    {
+      "id": "d545d12e-323b-4290-a850-059eb31a5b7b",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto LKIJ",
+      "price": "40",
+      "description": "#11111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "fe41723d-c6e8-492d-b875-bb6f6db7d957",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto TEST",
+      "price": "40",
+      "description": "#11111111",
+      "category": "Consolas"
+    },
+    {
+      "id": "fa560f61-4287-4e19-8f8c-f4ed81d708be",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto TEST2",
+      "price": "60",
+      "description": "#1111111",
+      "category": "Diversos"
+    },
+    {
+      "id": "0822f060-3cdb-4f40-8ce0-56b804d49a27",
+      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
+      "name": "Producto ALEXA",
+      "price": "27",
+      "description": "#44444",
       "category": "Diversos"
     }
   ],

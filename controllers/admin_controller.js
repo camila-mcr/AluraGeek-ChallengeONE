@@ -2,7 +2,7 @@ import { productsServices } from "../services/products_services.js";
 
 console.log("esto: ", productsServices);
 
-const createNewCard = (id, image, name, price, description) => {
+const createNewCard = (id, image, name, price, category, description) => {
     const card = document.createElement("div"); 
     card.classList.add("category__card");
     console.log("card id: ", id);
@@ -39,6 +39,7 @@ const createNewCard = (id, image, name, price, description) => {
         <div class="category__info">
             <h3 class="category__name">${name}</h3>
             <h2 class="category__price">R$ ${price},00</h2>
+            <h3 class="category__category">${category}</h3>
             <h3 class="category__description">${description}</h3>
         </div>
     `;
@@ -51,7 +52,20 @@ const createNewCard = (id, image, name, price, description) => {
 
     delete_button.addEventListener("click", () => {
         console.log("click delete.", id);
-        productsServices.deleteProduct(id).then(response => console.log(response)).catch(error => alert("Error al eliminar"));
+        //Modal - Eliminar producto
+        const modal = document.getElementById("delete_modal");
+        const confirm_button = document.getElementById("delete_confirm");
+        const cancel_button = document.getElementById("delete_cancel");
+
+        modal.style.display = "block";
+        cancel_button.addEventListener("click", ()=>{
+            modal.style.display = "none";
+        });
+
+        confirm_button.addEventListener("click", ()=>{
+            productsServices.deleteProduct(id).then(response => console.log("eliminado", response)).catch(error => alert("Error al eliminar"));
+        });
+
     });
 
     return card;
@@ -63,11 +77,9 @@ console.log("box: ", categoryBox);
 
 productsServices.productsList().then((data) => {
     data.forEach((card) => {
-        const {id, image, name, price, description} = card;
-        const newCard = createNewCard(id, image, name, price, description);
+        const {id, image, name, price, category, description} = card;
+        const newCard = createNewCard(id, image, name, price, category, description);
         categoryBox.appendChild(newCard);
     });
 }).catch((error) => alert("Ocurrió un error."));
-
-
 

@@ -2,32 +2,24 @@ import { productsServices } from "../services/products_services.js";
 
 let products = [];
 
-const searchBarInput = document.getElementById("search_bar");
 
-const searchButton = document.getElementById("search_button");
-
-searchBarInput.addEventListener("keypress", (e) => {
-    console.log("keypress: ", e);
-    if (e.key === "Enter"){
-        searchProduct(e.target);
-    };
-});
-
-searchButton.addEventListener("click", () => {
-    searchProduct(searchBarInput);
-});
-
+// Retrieve the data from the URL parameters or local storage
+const urlParams = new URLSearchParams(window.location.search);
+const value = urlParams.get('value');
+console.log("Value URL: ", value);
 
 const searchProduct = (e) => {
-    const value = e.value.toLowerCase();
-    console.log(products);
+    const value = e.toLowerCase();
+    console.log("Value searchProduct: ", value);
+    console.log("productos: ", products);
     products.forEach((product) => {
         const isVisible = product.name.toLowerCase().includes(value);
         console.log(isVisible);
         console.log(product.element);
         product.element.classList.toggle("hide", !isVisible);
     });
-}
+};
+
 
 
 const createNewCard = (image, name, price) => {
@@ -49,17 +41,20 @@ const createNewCard = (image, name, price) => {
     return card;
 };
 
-const main = document.querySelector("main");
-console.log(main);
+
 
 const productsBox = document.getElementById("products_box");
 console.log("box: ", productsBox);
 
 
 productsServices.productsList().then((data) => {
+    console.log("data: ", data);
     products = data.map((product) => {
         const newCard = createNewCard(product.image, product.name, product.price);
         productsBox.appendChild(newCard);
         return {name: product.name, element: newCard};
     });
+
+    searchProduct(value);
 }).catch((error) => alert("Ocurrió un error."));
+

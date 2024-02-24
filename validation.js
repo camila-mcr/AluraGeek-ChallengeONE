@@ -1,5 +1,42 @@
+console.log("Conectado.");
 
-//VALIDACIONES DE LOS INPUTS
+//----------------REDIRECCIONAMIENTO----------------//
+
+const buttons = [
+    document.getElementById("login_button_index"),
+    document.getElementById("banner_button"),
+    document.getElementById("button_addProduct"),
+    document.getElementById("adminMenu_button")
+];
+
+
+const buttonActions = {
+    login_button_index: () => {redirect("login.html")},
+    banner_button: () => {document.location.href = "#category_console"},
+    button_addProduct: () => {redirect("addProduct.html")},
+    adminMenu_button: () => {redirect("admin.html")},
+};
+
+console.log("buttons: ", buttons);
+
+
+buttons.filter((button) => { return button != null}).forEach((button)=>{
+    button.addEventListener("click", (button) => {
+        const buttonId = button.target.id;
+        if(buttonActions[buttonId]){
+            buttonActions[buttonId]();
+            console.log("click");
+        };
+    });
+});
+
+
+function redirect(screen){
+    window.location.href = screen;
+};
+
+
+//----------------VALIDACIONES----------------//
 
 const inputs = [
     document.getElementById("contact_name"),
@@ -7,10 +44,11 @@ const inputs = [
     document.getElementById("login_email"),
     document.getElementById("login_password"),
     document.getElementById("image_addProduct"),
-    document.getElementById("category_addProduct"),
+    // document.getElementById("category_addProduct"),
     document.getElementById("name_addProduct"),
     document.getElementById("price_addProduct"),
     document.getElementById("description_addProduct"),
+    document.getElementById("category_select")
 ];
 
 console.log("Inputs: ", inputs);
@@ -52,13 +90,13 @@ const inputInfo = {
         },
         
     },
-    category_addProduct: {
-        errorMessages: {
-            valueMissing: "El campo 'categoria' no puede estar vacío.",
-            patternMismatch: "Máximo 20 caracteres."
-        },
+    // category_addProduct: {
+    //     errorMessages: {
+    //         valueMissing: "El campo 'categoria' no puede estar vacío.",
+    //         patternMismatch: "Máximo 20 caracteres."
+    //     },
         
-    },
+    // },
     name_addProduct: {
         errorMessages: {
             valueMissing: "El campo 'nombre del producto' no puede estar vacío.",
@@ -80,6 +118,11 @@ const inputInfo = {
             tooLong: "Al menos 5 caracteres, máximo 120 caracteres."
         },
         
+    },
+    category_select: {
+        errorMessages: {
+            valueMissing: "El campo 'categoria' no puede estar vacío.",
+        },
     },
 };
 
@@ -126,7 +169,7 @@ function showErrorMessage(inputId, input){
 };
 
 
-//VALIDACIÓN DE LOS FORMULARIOS
+//VALIDACIÓN FORMULARIO DE CONTACTO
 
 const contactForm = document.getElementById("contact_form");
 
@@ -157,4 +200,22 @@ contactForm.addEventListener("submit", (event) => {
 });
 
 
+////  SEARCH BAR
 
+const searchBarInput = document.getElementById("search_bar");
+
+const searchButton = document.getElementById("search_button");
+
+searchBarInput.addEventListener("keypress", (e) => {
+    console.log("keypress: ", e, "-- e.target.value: ", e.target.value);
+
+    const searchBarInput = e.target.value;
+    if (e.key === "Enter"){
+        window.location.href = `searchResult.html?value=${searchBarInput}`;
+    };
+});
+
+searchButton.addEventListener("click", () => {
+    // searchProduct(searchBarInput);
+    window.location.href = `searchResult.html?value=${searchBarInput.value}`;
+});

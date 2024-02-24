@@ -37,15 +37,3 @@ function redirect(screen){
 
 
 
-
-//------------SEARCH BAR-------------------------
-
-// const search_bar = document.getElementById("search_bar");
-
-// const products = document.getElementsByClassName("category__name")[0];
-
-
-// console.log("search_bar: ", search_bar);
-
-// console.log("Lista productos: ", products);
-

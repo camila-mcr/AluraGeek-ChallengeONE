@@ -52,10 +52,12 @@ header button{
         justify-content: space-between;
         width: 65%;
     }
-    
-    .header__logo{
-        width: 25%;
-    } 
+
+    .header__box a{
+        width: 28%;
+        align-self: center;
+        
+    }
 
     .header__search{
         display: flex;
@@ -114,10 +116,6 @@ header button{
     .header__box{
         width: 55%;
     }
-    
-    .header__logo{
-        width: 27%;
-    } 
 
     .header__search{
         width: 65%;

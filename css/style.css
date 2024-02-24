@@ -102,7 +102,7 @@ span{
     gap: 8px;
 }
 
-.form_input_error input, .form_input_error textarea{
+.form_input_error input, .form_input_error textarea, .form_input_error select{
     border-bottom: none;
     border: 1px solid var(--colour_warning);
 }

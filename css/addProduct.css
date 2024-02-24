@@ -20,6 +20,27 @@ main button{
 }
 
 
+select{ 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--colour_grey50);
+    border: none;
+    border-bottom: 1px solid var(--colour_grey30);
+    padding: 5%;
+}
+
+select:focus{
+    outline: 0;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+
 @media screen and (min-width: 768px) {
     main{
         gap: 30px;
@@ -28,6 +49,10 @@ main button{
 
     main button{
         padding: 2% 10%;
+    }
+
+    select{ 
+        padding: 3%;
     }
 }
 
