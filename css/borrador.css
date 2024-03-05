@@ -1,70 +1,18 @@
 header{
     display: flex;
+    padding: 4% 5%;
     justify-content: space-between;
     align-items: center;
-    padding: 4% 5%;
     background-color: var(--colour_white);
 }
 
 .header__box{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-.header__box a{
     width: 30%;
 }
 
 .header__logo{
     width: 100%;
-}
-
-.header__search{
-    display: flex;
-    width: 30%;
-}
-
-.header__search--mobile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    padding: 1.2% 2%;
-    border-radius: 25px;
-    background-color: var(--background_grey05);
-    
-}
-
-.header__search input{
-    display: none;
-}
-
-.header__search--mobile input{
-    display: initial;
-    background-color: var(--background_grey05);
-    width: 90%;
-    border: none;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    padding: 2%;
-    color: var(--colour__grey50);
-}
-
-.header__search button, .header__search--mobile button{
-    border: none;
-    background-color: transparent;
-    padding: 0;
-}
-
-.header__search__img{
-    width: 24px;
-    height: 24px;
-}
-
-.header__search__img path{
-    fill: var(--colour_grey100);
 }
 
 header button{
@@ -73,13 +21,25 @@ header button{
 }
 
 .header__button__login{
-    padding: 2% 8%;
+    padding: 3% 13%;
 }
 
 .header__button__admin{
     padding: 3% 4%;
 }
 
+.header__search{
+    display: none;
+}
+
+.header__search__img--movil{
+    width: 24px;
+    height: 24px;
+}
+
+.header__search__img--movil path{
+    fill: var(--colour_grey100);
+}
 
 
 @media screen and (min-width: 768px) {
@@ -110,7 +70,6 @@ header button{
     }
     
     .header__search input{
-        display: initial;
         background-color: var(--background_grey05);
         width: 90%;
         border: none;
@@ -121,7 +80,7 @@ header button{
         color: var(--colour__grey50);
     }
 
-    /* .header__search button{
+    .header__search button{
         border: none;
         background-color: transparent;
         padding: 0;
@@ -134,7 +93,7 @@ header button{
     
     .header__search__img path{
         fill: var(--colour__grey50);
-    } */
+    }
 
     .header__button__login{
         padding: 1.5% 8%;
@@ -155,7 +114,7 @@ header button{
     }
 
     .header__box{
-        width: 60%;
+        width: 55%;
     }
 
     .header__search{

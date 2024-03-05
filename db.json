@@ -217,10 +217,49 @@
       "category": "Diversos"
     }
   ],
+
   "admin": [
     {
       "email": "ejemplo@gmail.com",
       "password": "Contraseña.123"
+    }
+  ],
+
+  "more_info": [
+    {
+      "id": "quienes-somos",
+      "title": "Quienes somos",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tristique arcu. Sed risus lectus, feugiat eu urna vitae, faucibus tempor sem. Maecenas eu eleifend ante. Pellentesque nec magna non magna bibendum tempor at eget arcu. Fusce id bibendum dui. Praesent quam felis, vehicula suscipit condimentum nec, tristique at sem. Fusce lacinia nisl mi, pretium malesuada turpis vulputate vel. Sed at ultrices velit. Pellentesque tincidunt vehicula dui sit amet rhoncus. Morbi tincidunt tellus dignissim purus rutrum, vitae gravida ante malesuada."
+    },
+
+    {
+      "id": "politica-de-privacidad",
+      "title": "Política de privacidad",
+      "content": "Proin eget viverra elit, quis sodales sapien. Nulla mollis laoreet blandit. Duis lacus metus, condimentum a porttitor id, iaculis in mi. Duis sed nisi et neque fringilla laoreet at eu mauris. Donec fringilla gravida malesuada. Nulla tristique ultrices velit, sed commodo augue dignissim sit amet. Curabitur ullamcorper tincidunt sagittis. Maecenas interdum orci vel nisl suscipit ultricies. Sed vel malesuada nibh. Curabitur id lectus ac orci pellentesque hendrerit. Donec magna diam, auctor sit amet rhoncus ac, pulvinar eu erat."
+    },
+
+    {
+      "id": "programa-de-fidelidad",
+      "title": "Programa de fidelidad",
+      "content": "Integer nibh ligula, gravida eget odio ut, lobortis sodales est. Etiam interdum purus quam, ac ornare magna pretium ut. Sed et dapibus erat, eget commodo est. Morbi in ligula augue. Aenean non ornare nunc. Phasellus vitae risus et ipsum imperdiet tincidunt. Proin est tellus, posuere at consectetur in, commodo ac nisl. Vestibulum eu pretium mauris. Aenean pretium arcu at suscipit dignissim. Donec nec sapien malesuada purus finibus semper eget ut libero. Curabitur accumsan felis at luctus scelerisque. Ut vestibulum felis vitae tellus molestie vestibulum. Etiam luctus quam eget dui ornare sollicitudin. Proin ac facilisis dui. Maecenas vitae enim dolor. Proin semper euismod auctor."
+    },
+
+    {
+      "id": "nuestras-tiendas",
+      "title": "Nuestras tiendas",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu volutpat, semper odio sit amet, pharetra est. Etiam blandit dui et fringilla mollis. Praesent sagittis nibh sit amet accumsan auctor. Morbi sed eros consectetur, lacinia nisl et, elementum magna. Maecenas aliquam ex vitae est tempor luctus."
+    },
+
+    {
+      "id": "quiero-ser-franquiciado",
+      "title": "Quiero ser franquiciado",
+      "content": "Fusce eget arcu arcu. Vestibulum turpis lorem, porta id nisl in, congue pretium orci. Pellentesque eu massa nec enim congue condimentum quis eget purus. Suspendisse eu tellus vel augue rutrum eleifend. Sed eget ex ut lacus efficitur vehicula et ut ipsum. Nunc quis congue purus. Cras condimentum diam ac orci fermentum, non luctus sem lobortis. Fusce eu velit at dolor imperdiet posuere. Duis diam mi, fringilla eget interdum pretium, porttitor et eros. Donec bibendum, erat et pulvinar luctus, elit tellus gravida elit, non pellentesque quam turpis sit amet augue. Aliquam ac nibh ut mi semper malesuada eget ac arcu. Pellentesque lobortis rhoncus lacus. Mauris semper urna sit amet congue dapibus."
+    },
+
+    {
+      "id": "anuncie-aqui",
+      "title": "Anúncie aquí",
+      "content": "Cras nec turpis id nibh hendrerit porta sit amet ut justo. Vivamus placerat odio vel ante dictum ultricies. Nulla lobortis turpis nec lorem semper, et malesuada odio pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ornare justo sit amet turpis gravida, nec maximus justo lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin egestas rutrum nisl sed varius."
     }
   ]
 }

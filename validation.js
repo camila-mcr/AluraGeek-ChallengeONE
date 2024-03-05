@@ -12,7 +12,7 @@ const buttons = [
 
 const buttonActions = {
     login_button_index: () => {redirect("login.html")},
-    banner_button: () => {document.location.href = "#category_console"},
+    banner_button: () => {document.location.href = "#products_category_Consolas"},
     button_addProduct: () => {redirect("addProduct.html")},
     adminMenu_button: () => {redirect("admin.html")},
 };

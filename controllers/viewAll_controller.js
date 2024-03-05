@@ -34,7 +34,7 @@ console.log("productsSection: ", productsSection);
 
 
 
-const createNewCard = (image, name, price, category) => {
+const createNewCard = (image, name, price, category, id) => {
     const card = document.createElement("div"); 
     card.classList.add("products__card");
     card.setAttribute("data-category", `${category}`);
@@ -46,7 +46,7 @@ const createNewCard = (image, name, price, category) => {
         <div class="products__card__info">
             <h3 class="products__card__name">${name}</h3>
             <h2 class="products__card__price">R$ ${price},00</h2>
-            <a class="products__card__link" href="#">Ver producto</a>
+            <a class="products__card__link" href="viewProduct.html?id=${id}">Ver producto</a>
         </div>
     `;
 
@@ -86,7 +86,7 @@ productsServices.productsList().then((data) => {
     //Crear productos
     data.forEach((card) => {
         if (category === card.category) {
-            const newCard = createNewCard(card.image, card.name, card.price, card.category);
+            const newCard = createNewCard(card.image, card.name, card.price, card.category, card.id);
             console.log("New product: ", newCard);
 
             if ((category === productsBox.dataset.category) && ( category === newCard.dataset.category)) {

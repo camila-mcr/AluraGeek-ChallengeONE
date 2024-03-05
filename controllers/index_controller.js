@@ -63,7 +63,6 @@ const createNewCard = (image, name, price, category, id) => {
 
 
 
-
 productsServices.productsList().then((data) => {
     console.log("data: ", data);
     const mapa = data.map((data) => data.category);
@@ -71,8 +70,6 @@ productsServices.productsList().then((data) => {
 
     const categories = mapa.filter((c, index) => {return mapa.indexOf(c) === index});
     console.log("categories: ", categories);
-
-    
 
     // Crear categorias
     categories.forEach((category) => {
@@ -85,19 +82,42 @@ productsServices.productsList().then((data) => {
         console.log("productsBox: ", productsBox);
 
         console.log("WHATCH THIS: ", category, "array", categories);
+    
 
         //Crear productos
-        data.forEach((card) => {
-            if (category === card.category) {
-                const newCard = createNewCard(card.image, card.name, card.price, card.category, card.id);
-                console.log("New product: ", newCard);
-    
-                if ((category === productsBox.dataset.category) && ( category === newCard.dataset.category)) {
-                    productsBox.appendChild(newCard);
-                };
+
+        const products = data.filter((filter) => filter.category === category);
+        console.log("products: ", products);
+
+        let productsList = [];
+
+        const productSelection = (n) => {
+            if (n >= products.length) {
+                return products;
+            };
+            for (let i = 0; i < n; i++) {
+                let newElem = products[Math.floor(Math.random() * products.length)];
+                while (productsList.includes(newElem)) {
+                newElem = products[Math.floor(Math.random() * products.length)];
+                }
+                productsList.push(newElem);
+            };
+        };
+
+        if (window.screen.width <1024) {
+            productSelection(4);
+        } else {
+            productSelection(6);
+        };
+
+        productsList.forEach((card) => {
+            const newCard = createNewCard(card.image, card.name, card.price, card.category, card.id);
+            console.log("New product: ", newCard);
+
+            if ((category === productsBox.dataset.category) && ( category === newCard.dataset.category)) {
+                productsBox.appendChild(newCard);
             };
         });
-        
     });
     
 }).catch((error) => {alert("Ocurrió un error."); console.log("error: ", error)});
