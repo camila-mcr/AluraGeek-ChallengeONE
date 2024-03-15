@@ -1,7 +1,5 @@
 import { productsServices } from "../services/products_services.js";
 
-console.log("esto: ", productsServices);
-
 const createNewCard = (image, name, price) => {
     const card = document.createElement("div"); 
     card.classList.add("products__card");
@@ -23,8 +21,6 @@ const createNewCard = (image, name, price) => {
 };
 
 const productsBox = document.getElementById("products_box");
-console.log("box: ", productsBox);
-
 
 productsServices.productsList().then((data) => {
     data.forEach((card) => {
@@ -32,10 +28,3 @@ productsServices.productsList().then((data) => {
         productsBox.appendChild(newCard);
     });
 }).catch((error) => alert("Ocurrió un error."));
-
-
-
-
-
-
-

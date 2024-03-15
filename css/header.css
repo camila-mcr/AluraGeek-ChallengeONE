@@ -12,6 +12,7 @@ header{
     align-items: center;
     width: 100%;
 }
+
 .header__box a{
     width: 30%;
 }
@@ -33,7 +34,6 @@ header{
     padding: 1.2% 2%;
     border-radius: 25px;
     background-color: var(--background_grey05);
-    
 }
 
 .header__search input{
@@ -81,22 +81,18 @@ header button{
 }
 
 
-
 @media screen and (min-width: 768px) {
     header{
         padding: 3% 4%;
     }
 
     .header__box{
-        display: flex;
-        justify-content: space-between;
         width: 65%;
     }
 
     .header__box a{
         width: 28%;
         align-self: center;
-        
     }
 
     .header__search{
@@ -121,31 +117,12 @@ header button{
         color: var(--colour__grey50);
     }
 
-    /* .header__search button{
-        border: none;
-        background-color: transparent;
-        padding: 0;
-    }
-    
-    .header__search__img{
-        width: 24px;
-        height: 24px;
-    }
-    
-    .header__search__img path{
-        fill: var(--colour__grey50);
-    } */
-
     .header__button__login{
         padding: 1.5% 8%;
     }
     
     .header__button__admin{
         padding: 1.5% 2%;
-    }
-
-    .header__search__img--movil{
-        display: none;
     }
 }
 

@@ -11,7 +11,7 @@ const buttons = [
 
 
 const buttonActions = {
-    login_button_index: () => {redirect("login.html")},
+    login_button_index: () => {redirect("pages/login.html")},
     banner_button: () => {document.location.href = "#products_category_Consolas"},
     button_addProduct: () => {redirect("addProduct.html")},
     adminMenu_button: () => {redirect("admin.html")},
@@ -44,7 +44,6 @@ const inputs = [
     document.getElementById("login_email"),
     document.getElementById("login_password"),
     document.getElementById("image_addProduct"),
-    // document.getElementById("category_addProduct"),
     document.getElementById("name_addProduct"),
     document.getElementById("price_addProduct"),
     document.getElementById("description_addProduct"),
@@ -90,13 +89,6 @@ const inputInfo = {
         },
         
     },
-    // category_addProduct: {
-    //     errorMessages: {
-    //         valueMissing: "El campo 'categoria' no puede estar vacío.",
-    //         patternMismatch: "Máximo 20 caracteres."
-    //     },
-        
-    // },
     name_addProduct: {
         errorMessages: {
             valueMissing: "El campo 'nombre del producto' no puede estar vacío.",
@@ -200,7 +192,7 @@ contactForm.addEventListener("submit", (event) => {
 });
 
 
-////  SEARCH BAR
+//----------------SEARCH BAR----------------//
 
 const searchBarInput = document.getElementById("search_bar");
 
@@ -211,11 +203,19 @@ searchBarInput.addEventListener("keypress", (e) => {
 
     const searchBarInput = e.target.value;
     if (e.key === "Enter"){
-        window.location.href = `searchResult.html?value=${searchBarInput}`;
+        if (e.view.location.pathname === "/index.html") {
+            window.location.href = `pages/searchResult.html?value=${searchBarInput}`;
+        } else {
+            window.location.href = `searchResult.html?value=${searchBarInput}`;
+        }
     };
 });
 
-searchButton.addEventListener("click", () => {
-    // searchProduct(searchBarInput);
-    window.location.href = `searchResult.html?value=${searchBarInput.value}`;
+searchButton.addEventListener("click", (e) => {
+    // searchProduct
+    if (e.view.location.pathname === "/index.html") {
+        window.location.href = `pages/searchResult.html?value=${searchBarInput.value}`;
+    } else {
+        window.location.href = `searchResult.html?value=${searchBarInput.value}`;
+    }
 });

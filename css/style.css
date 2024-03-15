@@ -1,5 +1,4 @@
 :root {
-    --variable: valor;
     --colour_blue100: #2A7AE4;
     --colour_grey30: #C8C8C8;
     --colour__grey50: #A2A2A2;
@@ -14,12 +13,10 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body{
     font-family: 'Raleway', sans-serif;
     color: var(--colour_grey100);
 }
-
 
 h1{
     font-size: 22px;
@@ -41,7 +38,6 @@ h4{
     font-size: 12px;
     line-height: 16px;
 }
-
 
 button{
     font-family: 'Raleway', sans-serif;
@@ -65,7 +61,6 @@ a{
 a:hover{
     cursor: pointer;
 }
-
 
 input, textarea{
     font-family: 'Raleway', sans-serif;

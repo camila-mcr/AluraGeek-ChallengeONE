@@ -33,20 +33,20 @@
       "category": "Star Wars"
     },
     {
-      "id": "5",
       "image": "https://www.stagenine.com/cdn/shop/products/6443725cv19d.jpg?v=1677879839&width=1946",
-      "name": "Producto ",
+      "name": "Producto XYZ",
       "price": "60",
       "description": "#1111111",
-      "category": "Star Wars"
+      "category": "Star Wars",
+      "id": "5"
     },
     {
-      "id": "6",
       "image": "https://m.media-amazon.com/images/I/71QR0wqjLSL._AC_UF894,1000_QL80_.jpg",
-      "name": "Producto ",
+      "name": "Producto XYZ",
       "price": "60",
       "description": "#1111111",
-      "category": "Star Wars"
+      "category": "Star Wars",
+      "id": "6"
     },
     {
       "id": "7",
@@ -145,117 +145,110 @@
       "category": "Diversos"
     },
     {
-      "id": "98776",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto TEMPORAL",
+      "image": "https://images.goodsmile.info/cgm/images/product/20231026/15149/125304/large/fb6f3c98da8c72ccace3aa80feea7760.jpg",
+      "name": "Producto JJK",
       "price": "60",
       "description": "#1111111",
-      "category": "Diversos"
+      "category": "Diversos",
+      "id": "98776"
     },
     {
-      "id": "22678",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto TEMPORAL",
+      "image": "https://cdn.actionfigurenow.com/wp-content/uploads/2023/12/NARUTO.jpg_-1.jpg",
+      "name": "Producto NARUTO",
       "price": "60",
       "description": "#1111111",
-      "category": "Diversos"
+      "category": "Diversos",
+      "id": "22678"
     },
     {
-      "id": "69bce020-6ab2-4831-86ad-6085a8f18250",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto TEMPORAL",
+      "image": "https://img2.cgtrader.com/items/4774070/2188072dc6/large/keychain-akatsuki-3d-model-2188072dc6.jpg",
+      "name": "Keychain AKATSUKI",
       "price": "40",
       "description": "#1111111111",
-      "category": "Diversos"
+      "category": "Diversos",
+      "id": "69bce020-6ab2-4831-86ad-6085a8f18250"
     },
     {
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto NUEVO EDIT",
-      "price": "40",
+      "image": "https://cdn.mos.cms.futurecdn.net/e4a7278c6843b0c2b44e47f20075ba2a-1200-80.jpg",
+      "name": "Consola 3DS",
+      "price": "60",
       "description": "#11111111",
       "category": "Consolas",
       "id": "fc01c0a4-f171-4a0b-bbb2-9da74757cd86"
     },
     {
-      "id": "0cbc586c-9268-4961-a761-068ea46ed2fb",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto SEL",
+      "image": "https://static.wixstatic.com/media/df5dad_b666818023de46f5bcd7fa1db0c476db~mv2.jpg/v1/fill/w_630,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Star%20wars%20light%20saber_edited.jpg",
+      "name": "Producto LIGHTSABER",
       "price": "60",
       "description": "#111111",
-      "category": "Star Wars"
+      "category": "Star Wars",
+      "id": "0cbc586c-9268-4961-a761-068ea46ed2fb"
     },
     {
-      "id": "d545d12e-323b-4290-a850-059eb31a5b7b",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto LKIJ",
+      "image": "https://www.androidauthority.com/wp-content/uploads/2019/03/Mini-PlayStation-Classic-2.jpg",
+      "name": "Consola PS",
       "price": "40",
       "description": "#11111111",
-      "category": "Consolas"
+      "category": "Consolas",
+      "id": "d545d12e-323b-4290-a850-059eb31a5b7b"
     },
     {
-      "id": "fe41723d-c6e8-492d-b875-bb6f6db7d957",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto TEST",
+      "image": "https://www-konga-com-res.cloudinary.com/w_400,f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/P/O/185269_1646154507.jpg",
+      "name": "Consola WII",
       "price": "40",
       "description": "#11111111",
-      "category": "Consolas"
+      "category": "Consolas",
+      "id": "fe41723d-c6e8-492d-b875-bb6f6db7d957"
     },
     {
-      "id": "fa560f61-4287-4e19-8f8c-f4ed81d708be",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto TEST2",
+      "image": "https://store.crunchyroll.com/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw8da9a76d/images/6986003546156-1-ultra-tokyo-connection-plush-chainsaw-man-pochita-tongue-out-plush-10-32075705614380.jpg",
+      "name": "Producto POCHITA",
       "price": "60",
       "description": "#1111111",
-      "category": "Diversos"
+      "category": "Diversos",
+      "id": "fa560f61-4287-4e19-8f8c-f4ed81d708be"
     },
     {
-      "id": "0822f060-3cdb-4f40-8ce0-56b804d49a27",
-      "image": "https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png",
-      "name": "Producto ALEXA",
+      "image": "https://m.media-amazon.com/images/I/61rYp7M2FFL.jpg",
+      "name": "Mug JACK",
       "price": "27",
       "description": "#44444",
-      "category": "Diversos"
+      "category": "Diversos",
+      "id": "0822f060-3cdb-4f40-8ce0-56b804d49a27"
     }
   ],
-
   "admin": [
     {
       "email": "ejemplo@gmail.com",
       "password": "Contraseña.123"
     }
   ],
-
-  "more_info": [
+  "about": [
     {
       "id": "quienes-somos",
       "title": "Quienes somos",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tristique arcu. Sed risus lectus, feugiat eu urna vitae, faucibus tempor sem. Maecenas eu eleifend ante. Pellentesque nec magna non magna bibendum tempor at eget arcu. Fusce id bibendum dui. Praesent quam felis, vehicula suscipit condimentum nec, tristique at sem. Fusce lacinia nisl mi, pretium malesuada turpis vulputate vel. Sed at ultrices velit. Pellentesque tincidunt vehicula dui sit amet rhoncus. Morbi tincidunt tellus dignissim purus rutrum, vitae gravida ante malesuada."
     },
-
     {
       "id": "politica-de-privacidad",
       "title": "Política de privacidad",
       "content": "Proin eget viverra elit, quis sodales sapien. Nulla mollis laoreet blandit. Duis lacus metus, condimentum a porttitor id, iaculis in mi. Duis sed nisi et neque fringilla laoreet at eu mauris. Donec fringilla gravida malesuada. Nulla tristique ultrices velit, sed commodo augue dignissim sit amet. Curabitur ullamcorper tincidunt sagittis. Maecenas interdum orci vel nisl suscipit ultricies. Sed vel malesuada nibh. Curabitur id lectus ac orci pellentesque hendrerit. Donec magna diam, auctor sit amet rhoncus ac, pulvinar eu erat."
     },
-
     {
       "id": "programa-de-fidelidad",
       "title": "Programa de fidelidad",
       "content": "Integer nibh ligula, gravida eget odio ut, lobortis sodales est. Etiam interdum purus quam, ac ornare magna pretium ut. Sed et dapibus erat, eget commodo est. Morbi in ligula augue. Aenean non ornare nunc. Phasellus vitae risus et ipsum imperdiet tincidunt. Proin est tellus, posuere at consectetur in, commodo ac nisl. Vestibulum eu pretium mauris. Aenean pretium arcu at suscipit dignissim. Donec nec sapien malesuada purus finibus semper eget ut libero. Curabitur accumsan felis at luctus scelerisque. Ut vestibulum felis vitae tellus molestie vestibulum. Etiam luctus quam eget dui ornare sollicitudin. Proin ac facilisis dui. Maecenas vitae enim dolor. Proin semper euismod auctor."
     },
-
     {
       "id": "nuestras-tiendas",
       "title": "Nuestras tiendas",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu volutpat, semper odio sit amet, pharetra est. Etiam blandit dui et fringilla mollis. Praesent sagittis nibh sit amet accumsan auctor. Morbi sed eros consectetur, lacinia nisl et, elementum magna. Maecenas aliquam ex vitae est tempor luctus."
     },
-
     {
       "id": "quiero-ser-franquiciado",
       "title": "Quiero ser franquiciado",
       "content": "Fusce eget arcu arcu. Vestibulum turpis lorem, porta id nisl in, congue pretium orci. Pellentesque eu massa nec enim congue condimentum quis eget purus. Suspendisse eu tellus vel augue rutrum eleifend. Sed eget ex ut lacus efficitur vehicula et ut ipsum. Nunc quis congue purus. Cras condimentum diam ac orci fermentum, non luctus sem lobortis. Fusce eu velit at dolor imperdiet posuere. Duis diam mi, fringilla eget interdum pretium, porttitor et eros. Donec bibendum, erat et pulvinar luctus, elit tellus gravida elit, non pellentesque quam turpis sit amet augue. Aliquam ac nibh ut mi semper malesuada eget ac arcu. Pellentesque lobortis rhoncus lacus. Mauris semper urna sit amet congue dapibus."
     },
-
     {
       "id": "anuncie-aqui",
       "title": "Anúncie aquí",

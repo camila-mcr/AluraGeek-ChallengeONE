@@ -1,11 +1,10 @@
 import { productsServices } from "../services/products_services.js";
 
-console.log("esto: ", productsServices);
 
 const createNewCard = (id, image, name, price, category, description) => {
     const card = document.createElement("div"); 
     card.classList.add("category__card");
-    console.log("card id: ", id);
+    
     const content = `
         <div class="category__card__edit">
             <button class="bin" type="button" id="delete_card" data-productId=${id}>
@@ -51,7 +50,6 @@ const createNewCard = (id, image, name, price, category, description) => {
     const delete_button = card.querySelector("#delete_card");
 
     delete_button.addEventListener("click", () => {
-        console.log("click delete.", id);
         //Modal - Eliminar producto
         const modal = document.getElementById("delete_modal");
         const confirm_button = document.getElementById("delete_confirm");
@@ -72,7 +70,6 @@ const createNewCard = (id, image, name, price, category, description) => {
 };
 
 const categoryBox = document.getElementById("category_box");
-console.log("box: ", categoryBox);
 
 
 productsServices.productsList().then((data) => {

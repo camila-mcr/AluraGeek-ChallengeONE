@@ -1,7 +1,11 @@
+// const url = "http://localhost:3000";
+const url = "https://camila-mcr.github.io/AluraGeek-api";
+
+
 //GET-- Mostrar productos en el index
 
 const productsList = () => {
-    return fetch("http://localhost:3000/products").then((response) => {
+    return fetch(`${url}/products.json`).then((response) => {
         return response.json();
     });
 };
@@ -10,7 +14,7 @@ const productsList = () => {
 //POST --- Agregar nuevo producto addProduct
 
 const addProduct = (image, name, price, description, category) => {
-    return fetch("http://localhost:3000/products", {
+    return fetch(`${url}/products`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -30,7 +34,7 @@ const addProduct = (image, name, price, description, category) => {
 
 const deleteProduct = (id) => {
     console.log("Eliminar a : ", id);
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`${url}/products/${id}`, {
         method: "DELETE",
     });
 };
@@ -38,11 +42,11 @@ const deleteProduct = (id) => {
 //PUT-- Editar producto
 
 const productInfo = (id) => {
-    return fetch(`http://localhost:3000/products/${id}`).then((response) => response.json());
+    return fetch(`${url}/products/${id}`).then((response) => response.json());
 };
 
 const editProduct = (id, image, name, price, description, category) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`${url}/products/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

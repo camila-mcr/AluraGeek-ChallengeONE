@@ -4,14 +4,10 @@ import { productsServices } from "../services/products_services.js";
 // Retrieve the data from the URL parameters or local storage
 const urlParams = new URLSearchParams(window.location.search);
 const idProduct = urlParams.get('id');
-console.log("id del producto: ", typeof id)
 
 const createProduct = (image, name, price, category, description) => {
     const viewProductCard = document.createElement("div"); 
     viewProductCard.classList.add("viewProduct__card");
-    // productsBox.setAttribute("id", `products_box`);
-
-    console.log("viewProductCard: ", viewProductCard);
    
     const content = `
     <div class="viewProduct__img"><img src=${image} alt="Imagen del producto"></div>
@@ -29,8 +25,6 @@ const createProduct = (image, name, price, category, description) => {
 };
 
 const viewProduct = document.getElementById("viewProduct");
-console.log("viewProduct: ", viewProduct);
-
 
 
 const createSimilarProduct = (image, name, price, category, id) => {
@@ -55,47 +49,34 @@ const createSimilarProduct = (image, name, price, category, id) => {
 };
 
 const productsBox = document.getElementById("products_box");
-console.log("productsBox: ", productsBox);
-
-
 
 
 productsServices.productsList().then((data) => {
-
     //Crear producto
     const clickedProduct = data.find((card) => card.id === idProduct);
-    console.log("producto elegido: ", clickedProduct);
-
     const {id, image, name, price, category, description} = clickedProduct;
-
     const newCard = createProduct(image, name, price, category, description);
-    console.log("New product: ", newCard);
     viewProduct.appendChild(newCard);
 
-
-    
     //Crear productos similares
 
-    const similarCategory = data.filter((filter) => filter.category === category);
-
-    console.log('categorias similares: ', similarCategory)   
+    const similarCategory = data.filter((filter) => filter.category === category);  
 
     let similarProductsList = [];
 
     const randomSelection = (n) => {
         if (n >= similarCategory.length) {
             return similarCategory;
-        }
+        };
         for (let i = 0; i < n; i++) {
             let newElem = similarCategory[Math.floor(Math.random() * similarCategory.length)];
             while (similarProductsList.includes(newElem) || newElem === clickedProduct) {
-            newElem = similarCategory[Math.floor(Math.random() * similarCategory.length)];
-            }
+                newElem = similarCategory[Math.floor(Math.random() * similarCategory.length)];
+            };
             similarProductsList.push(newElem);
-        }
-    }
+        };
+    };
 
-    console.log("similar lista después: ", similarProductsList)
 
     if (window.screen.width <1024) {
         randomSelection(4);
@@ -105,9 +86,6 @@ productsServices.productsList().then((data) => {
 
     similarProductsList.forEach(product => {
         const similarProduct= createSimilarProduct(product.image, product.name, product.price, product.category, product.id);
-        console.log("New product: ", similarProduct);
         productsBox.appendChild(similarProduct);
     });
-
-    
 }).catch((error) => {alert("Ocurrió un error."); console.log("error: ", error)});

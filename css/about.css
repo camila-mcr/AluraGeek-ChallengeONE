@@ -1,4 +1,4 @@
-.more__info{
+.about{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -6,42 +6,41 @@
     background-color: var(--background_grey05);
 }
 
-.more__info h1{
+.about h1{
     text-align: center;
 }
 
-.more__info p{
+.about p{
     font-size: 16px;
     line-height: 19px;
     text-align: justify;
 }
 
 
-
 @media screen and (min-width: 768px){
-    .more__info{
+    .about{
         gap: 40px;
         padding: 4%;
     }
 
-    .more__info h1{
+    .about h1{
         font-size: 25px;
         line-height: 28px;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .more__info{
+    .about{
         gap: 50px;
         padding: 4% 10%;;
     }
 
-    .more__info h1{
+    .about h1{
         font-size: 28px;
         line-height: 30px;
     }
 
-    .more__info p{
+    .about p{
         font-size: 18px;
         line-height: 20px;
     }
