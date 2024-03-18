@@ -4,7 +4,6 @@ import { aboutList } from "../services/about_services.js";
 // Retrieve the data from the URL parameters or local storage
 const urlParams = new URLSearchParams(window.location.search);
 const urlValue = urlParams.get('value');
-console.log("Value URL: ", urlValue);
 
 
 const createSection = (title, content) => {

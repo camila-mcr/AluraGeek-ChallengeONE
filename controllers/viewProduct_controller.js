@@ -77,7 +77,6 @@ productsServices.productsList().then((data) => {
         };
     };
 
-
     if (window.screen.width <1024) {
         randomSelection(4);
     } else {

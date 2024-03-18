@@ -83,6 +83,6 @@ form.addEventListener("submit", (event) => {
     const description = document.getElementById("description_editProduct").value;
 
     productsServices.editProduct(id, image, name, price, description, category).then(()=>{
-        window.location.href = "/pages/editMessage.html";
+        window.location.href = "../pages/editMessage.html";
     });
 } );
