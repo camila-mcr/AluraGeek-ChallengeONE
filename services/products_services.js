@@ -1,11 +1,10 @@
-// const url = "http://localhost:3000";
-const url = "https://camila-mcr.github.io/AluraGeek-api";
+const url = "https://alurageek-api-1637.onrender.com";
 
 
 //GET-- Mostrar productos en el index
 
 const productsList = () => {
-    return fetch(`${url}/products.json`).then((response) => {
+    return fetch(`${url}/products`).then((response) => {
         return response.json();
     });
 };
