@@ -7,20 +7,12 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/camila-mcr/AluraGeek-ChallengeONE.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/camila-mcr/AluraGeek-ChallengeONE/issues"
-  },
-  "homepage": "https://github.com/camila-mcr/AluraGeek-ChallengeONE#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "json-serve": "^0.1.0",
-    "json-server": "^1.0.0-alpha.23"
+    "json-server": "^0.17.4"
   }
 }
